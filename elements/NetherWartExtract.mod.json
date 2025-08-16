@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "netherwartnew",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Nether Wart Extract",

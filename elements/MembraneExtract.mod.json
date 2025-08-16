@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "membrane_extract",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Membrane Extract",

@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "magma_cream_extract",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Magma Cream Extract",

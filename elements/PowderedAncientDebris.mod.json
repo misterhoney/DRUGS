@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "powdered_ancient_debris",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Powdered Ancient Debris",

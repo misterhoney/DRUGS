@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "torchflower_extract_potion",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Torchflower Extract",

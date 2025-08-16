@@ -8,18 +8,18 @@
       "registry_name": "distillery",
       "metadata": {
         "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/distillery.json",
+          "src/main/resources/assets/minecraft_drugs/blockstates/distillery.json",
           "src/main/resources/assets/minecraft_drugs/models/custom/distillery_particle.json",
           "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryTileRenderer.java",
           "src/main/java/net/mcreator/minecraftdrugs/block/DistilleryBlock.java",
-          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_0.json",
-          "src/main/java/net/mcreator/minecraftdrugs/block/display/DistilleryDisplayItem.java",
           "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryBlockModel.java",
-          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_1.json",
-          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryDisplayModel.java",
           "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryDisplayItemRenderer.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/distillery.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryDisplayModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/display/DistilleryDisplayItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_1.json",
           "src/main/java/net/mcreator/minecraftdrugs/block/entity/DistilleryTileEntity.java",
-          "src/main/resources/assets/minecraft_drugs/blockstates/distillery.json"
+          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_0.json"
         ]
       },
       "path": "~/Distillery"
@@ -46,8 +46,8 @@
       "registry_name": "echo_paste",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/item/EchoPasteItem.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/echo_paste.json"
+          "src/main/resources/assets/minecraft_drugs/models/item/echo_paste.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/EchoPasteItem.java"
         ]
       }
     },
@@ -59,8 +59,8 @@
       "registry_name": "powdered_ancient_debris",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/item/PowderedAncientDebrisItem.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/powdered_ancient_debris.json"
+          "src/main/resources/assets/minecraft_drugs/models/item/powdered_ancient_debris.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/PowderedAncientDebrisItem.java"
         ]
       }
     },
@@ -2406,8 +2406,8 @@
       "registry_name": "nether_wart_extract",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/item/NetherWartExtractItem.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/nether_wart_extract.json"
+          "src/main/resources/assets/minecraft_drugs/models/item/nether_wart_extract.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/NetherWartExtractItem.java"
         ]
       }
     },
@@ -2442,8 +2442,8 @@
       "registry_name": "membrane_extract",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/models/item/membrane_extract.json",
-          "src/main/java/net/mcreator/minecraftdrugs/item/MembraneExtractItem.java"
+          "src/main/java/net/mcreator/minecraftdrugs/item/MembraneExtractItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/membrane_extract.json"
         ]
       }
     },
@@ -2498,10 +2498,10 @@
       "registry_name": "magmatic_cobblestone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/blockstates/magmatic_cobblestone.json",
           "src/main/java/net/mcreator/minecraftdrugs/block/MagmaticCobblestoneBlock.java",
-          "src/main/resources/assets/minecraft_drugs/models/block/magmatic_cobblestone.json",
           "src/main/resources/data/minecraft_drugs/loot_table/blocks/magmatic_cobblestone.json",
+          "src/main/resources/assets/minecraft_drugs/models/block/magmatic_cobblestone.json",
+          "src/main/resources/assets/minecraft_drugs/blockstates/magmatic_cobblestone.json",
           "src/main/resources/assets/minecraft_drugs/models/item/magmatic_cobblestone.json"
         ]
       }
@@ -2527,8 +2527,8 @@
       "registry_name": "beetroot_extract",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/models/item/beetroot_extract.json",
-          "src/main/java/net/mcreator/minecraftdrugs/item/BeetrootExtractItem.java"
+          "src/main/java/net/mcreator/minecraftdrugs/item/BeetrootExtractItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/beetroot_extract.json"
         ]
       }
     },
@@ -2540,9 +2540,19 @@
       "registry_name": "bottleof_lava",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/models/item/bottleof_lava.json",
-          "src/main/java/net/mcreator/minecraftdrugs/item/BottleofLavaItem.java"
+          "src/main/java/net/mcreator/minecraftdrugs/item/BottleofLavaItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/bottleof_lava.json"
         ]
+      }
+    },
+    {
+      "name": "Tests",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tests",
+      "metadata": {
+        "files": []
       }
     }
   ],
@@ -2562,7 +2572,7 @@
     "en_us": {
       "item.minecraft_drugs.beetroot_extract": "Beetroot Extract",
       "item.minecraft_drugs.torchflower_extract": "Torchflower Extract",
-      "item.minecraft_drugs.bottleof_lava": "Beetroot Extract",
+      "item.minecraft_drugs.bottleof_lava": "Bottle o\u0027 Lava",
       "item.minecraft_drugs.powdered_ancient_debris": "Powdered Ancient Debris",
       "item.minecraft_drugs.magma_cream_extract": "Magma Cream Extract",
       "item.minecraft_drugs.echo_paste": "Echo Paste",
@@ -2572,7 +2582,8 @@
       "item_group.minecraft_drugs.citrinium": "Citrinium",
       "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
       "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear",
-      "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON"
+      "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON",
+      "item_group.minecraft_drugs.tests": "Tests"
     }
   },
   "metadata": {

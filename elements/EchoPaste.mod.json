@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "echo_paste",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Echo Paste",

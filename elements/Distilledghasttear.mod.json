@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "distilled_ghast_tear_potion",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Distilled Ghast Tear",

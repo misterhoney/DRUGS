@@ -1,7 +1,7 @@
 {
   "item.minecraft_drugs.beetroot_extract": "Beetroot Extract",
   "item.minecraft_drugs.torchflower_extract": "Torchflower Extract",
-  "item.minecraft_drugs.bottleof_lava": "Beetroot Extract",
+  "item.minecraft_drugs.bottleof_lava": "Bottle o\u0027 Lava",
   "item.minecraft_drugs.powdered_ancient_debris": "Powdered Ancient Debris",
   "item.minecraft_drugs.magma_cream_extract": "Magma Cream Extract",
   "item.minecraft_drugs.echo_paste": "Echo Paste",
@@ -11,5 +11,6 @@
   "item_group.minecraft_drugs.citrinium": "Citrinium",
   "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
   "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear",
-  "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON"
+  "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON",
+  "item_group.minecraft_drugs.tests": "Tests"
 }

@@ -2571,20 +2571,21 @@
       "item.minecraft_drugs.membrane_extract": "Membrane Extract",
       "item_group.minecraft_drugs.citrinium": "Citrinium",
       "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
-      "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear"
+      "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear",
+      "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.minecraft_drugs.json",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
+      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
       "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMenus.java",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlocks.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlockEntities.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModItems.java"

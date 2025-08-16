@@ -10,5 +10,6 @@
   "item.minecraft_drugs.membrane_extract": "Membrane Extract",
   "item_group.minecraft_drugs.citrinium": "Citrinium",
   "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
-  "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear"
+  "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear",
+  "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON"
 }

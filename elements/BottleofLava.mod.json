@@ -17,7 +17,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 20,
+    "useDuration": 40,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -47,7 +47,7 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": true,
+    "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {

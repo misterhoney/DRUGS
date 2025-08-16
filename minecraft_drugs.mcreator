@@ -8,18 +8,18 @@
       "registry_name": "distillery",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/models/item/distillery.json",
-          "src/main/resources/assets/minecraft_drugs/blockstates/distillery.json",
           "src/main/resources/assets/minecraft_drugs/models/custom/distillery_particle.json",
           "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryTileRenderer.java",
           "src/main/java/net/mcreator/minecraftdrugs/block/DistilleryBlock.java",
-          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryBlockModel.java",
-          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryDisplayModel.java",
+          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_0.json",
           "src/main/java/net/mcreator/minecraftdrugs/block/display/DistilleryDisplayItem.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryBlockModel.java",
           "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_1.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryDisplayModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryDisplayItemRenderer.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/distillery.json",
           "src/main/java/net/mcreator/minecraftdrugs/block/entity/DistilleryTileEntity.java",
-          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_0.json"
+          "src/main/resources/assets/minecraft_drugs/blockstates/distillery.json"
         ]
       },
       "path": "~/Distillery"
@@ -2576,15 +2576,15 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.minecraft_drugs.json",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
-      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMenus.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlocks.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlockEntities.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModItems.java"

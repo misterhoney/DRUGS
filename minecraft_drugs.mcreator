@@ -2576,15 +2576,15 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.minecraft_drugs.json",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
-      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMenus.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlocks.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlockEntities.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModItems.java"

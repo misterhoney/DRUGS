@@ -46,8 +46,8 @@
       "registry_name": "echo_paste",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/models/item/echo_paste.json",
-          "src/main/java/net/mcreator/minecraftdrugs/item/EchoPasteItem.java"
+          "src/main/java/net/mcreator/minecraftdrugs/item/EchoPasteItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/echo_paste.json"
         ]
       }
     },
@@ -2406,8 +2406,8 @@
       "registry_name": "nether_wart_extract",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_drugs/models/item/nether_wart_extract.json",
-          "src/main/java/net/mcreator/minecraftdrugs/item/NetherWartExtractItem.java"
+          "src/main/java/net/mcreator/minecraftdrugs/item/NetherWartExtractItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/nether_wart_extract.json"
         ]
       }
     },
@@ -2442,8 +2442,8 @@
       "registry_name": "membrane_extract",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/item/MembraneExtractItem.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/membrane_extract.json"
+          "src/main/resources/assets/minecraft_drugs/models/item/membrane_extract.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/MembraneExtractItem.java"
         ]
       }
     },
@@ -2527,8 +2527,8 @@
       "registry_name": "beetroot_extract",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/item/BeetrootExtractItem.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/beetroot_extract.json"
+          "src/main/resources/assets/minecraft_drugs/models/item/beetroot_extract.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BeetrootExtractItem.java"
         ]
       }
     },
@@ -2540,8 +2540,8 @@
       "registry_name": "bottleof_lava",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/item/BottleofLavaItem.java",
-          "src/main/resources/assets/minecraft_drugs/models/item/bottleof_lava.json"
+          "src/main/resources/assets/minecraft_drugs/models/item/bottleof_lava.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BottleofLavaItem.java"
         ]
       }
     },
@@ -2553,6 +2553,24 @@
       "registry_name": "tests",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "BottleofLavaPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottleof_lava_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/BottleofLavaPlayerFinishesUsingItemProcedure.java"
+        ]
       }
     }
   ],
@@ -2572,7 +2590,7 @@
     "en_us": {
       "item.minecraft_drugs.beetroot_extract": "Beetroot Extract",
       "item.minecraft_drugs.torchflower_extract": "Torchflower Extract",
-      "item.minecraft_drugs.bottleof_lava": "Bottle o\u0027 Lava",
+      "item.minecraft_drugs.bottleof_lava": "Lava Bottle",
       "item.minecraft_drugs.powdered_ancient_debris": "Powdered Ancient Debris",
       "item.minecraft_drugs.magma_cream_extract": "Magma Cream Extract",
       "item.minecraft_drugs.echo_paste": "Echo Paste",
@@ -2588,15 +2606,15 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.minecraft_drugs.json",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
-      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
-      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMenus.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlocks.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlockEntities.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModItems.java"

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "membrane_extract",
+    "texture": "2",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bottle_of_lava",
+    "texture": "4",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "Bottle o' Lava",
+    "name": "Lava Bottle",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -17,7 +17,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 20,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -37,6 +37,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "BottleofLavaPlayerFinishesUsingItem"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -44,15 +47,15 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.GLASS_BOTTLE"
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "none",
+    "isAlwaysEdible": true,
+    "animation": "drink",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""

@@ -27,131 +27,12 @@ public class DistilleryOnTickUpdateProcedure {
 		ItemStack item2 = ItemStack.EMPTY;
 		ItemStack item1 = ItemStack.EMPTY;
 		ItemStack item3 = ItemStack.EMPTY;
+		ItemStack waste = ItemStack.EMPTY;
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "timer") == 0) {
-			item1 = new ItemStack(Items.GHAST_TEAR).copy();
-			item2 = new ItemStack(Blocks.MAGMA_BLOCK).copy();
-			item3 = new ItemStack(Items.POTION).copy();
-			result = new ItemStack(MinecraftDrugsModItems.DISTILLEDGHASTTEAR.get()).copy();
-			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == item1.getItem() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == item2.getItem()
-					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item3.getItem()
-					&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == result.getItem() || itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0)) {
-				{
-					int _value = 2;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-				{
-					int _value = 1;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("timer", 1);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("mStage", 71);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putString("recipeResult", (BuiltInRegistries.ITEM.getKey(result.getItem()).toString()));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putString("recipeItem_1", (BuiltInRegistries.ITEM.getKey(item1.getItem()).toString()));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putString("recipeItem_2", (BuiltInRegistries.ITEM.getKey(item2.getItem()).toString()));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putString("recipeItem_3", (BuiltInRegistries.ITEM.getKey(item3.getItem()).toString()));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item3.getItem()) {
-				{
-					int _value = 1;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-				{
-					int _value = 2;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item2.getItem()) {
-				{
-					int _value = 1;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-				{
-					int _value = 0;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-			} else {
-				{
-					int _value = 1;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-				{
-					int _value = 0;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
-			}
 			item1 = new ItemStack(Blocks.TORCHFLOWER).copy();
 			item2 = new ItemStack(Blocks.MAGMA_BLOCK).copy();
 			item3 = new ItemStack(Items.HONEY_BOTTLE).copy();
+			waste = new ItemStack(MinecraftDrugsModBlocks.MAGMATIC_COBBLESTONE.get()).copy();
 			result = new ItemStack(MinecraftDrugsModItems.TORCHFLOWER_EXTRACT.get()).copy();
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == item1.getItem() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == item2.getItem()
 					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item3.getItem()
@@ -194,6 +75,15 @@ public class DistilleryOnTickUpdateProcedure {
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
 						_blockEntity.getPersistentData().putString("recipeResult", (BuiltInRegistries.ITEM.getKey(result.getItem()).toString()));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putString("recipeWaste", (BuiltInRegistries.ITEM.getKey(waste.getItem()).toString()));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -292,8 +182,8 @@ public class DistilleryOnTickUpdateProcedure {
 						_itemHandlerModifiable.setStackInSlot(2, _setstack);
 					}
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-						ItemStack _setstack = new ItemStack(MinecraftDrugsModBlocks.MAGMATIC_COBBLESTONE.get()).copy();
-						_setstack.setCount(1);
+						ItemStack _setstack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((getBlockNBTString(world, BlockPos.containing(x, y, z), "recipeWaste"))).toLowerCase(java.util.Locale.ENGLISH)))).copy();
+						_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount());
 						_itemHandlerModifiable.setStackInSlot(1, _setstack);
 					}
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -325,6 +215,15 @@ public class DistilleryOnTickUpdateProcedure {
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
 							_blockEntity.getPersistentData().putString("recipeResult", "");
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeWaste", "");
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -382,6 +281,15 @@ public class DistilleryOnTickUpdateProcedure {
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
 						_blockEntity.getPersistentData().putDouble("mStage", 0);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putString("recipeWaste", "");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

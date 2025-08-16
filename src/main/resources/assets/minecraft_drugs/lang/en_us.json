@@ -1,0 +1,14 @@
+{
+  "item.minecraft_drugs.beetroot_extract": "Beetroot Extract",
+  "item.minecraft_drugs.torchflower_extract": "Torchflower Extract",
+  "item.minecraft_drugs.bottleof_lava": "Beetroot Extract",
+  "item.minecraft_drugs.powdered_ancient_debris": "Powdered Ancient Debris",
+  "item.minecraft_drugs.magma_cream_extract": "Magma Cream Extract",
+  "item.minecraft_drugs.echo_paste": "Echo Paste",
+  "block.minecraft_drugs.distillery": "Distillery",
+  "item.minecraft_drugs.nether_wart_extract": "Nether Wart Extract",
+  "item.minecraft_drugs.membrane_extract": "Membrane Extract",
+  "item_group.minecraft_drugs.citrinium": "Citrinium",
+  "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
+  "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear"
+}

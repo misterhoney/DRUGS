@@ -1,0 +1,2631 @@
+{
+  "mod_elements": [
+    {
+      "name": "Distillery",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/custom/distillery_particle.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryTileRenderer.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/DistilleryBlock.java",
+          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_0.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/display/DistilleryDisplayItem.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryBlockModel.java",
+          "src/main/resources/assets/minecraft_drugs/models/block/distillery_blockstate_1.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/DistilleryDisplayModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/DistilleryDisplayItemRenderer.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/distillery.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/entity/DistilleryTileEntity.java",
+          "src/main/resources/assets/minecraft_drugs/blockstates/distillery.json"
+        ]
+      },
+      "path": "~/Distillery"
+    },
+    {
+      "name": "DistilleryGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillery_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/gui/DistilleryGUIScreen.java",
+          "src/main/java/net/mcreator/minecraftdrugs/world/inventory/DistilleryGUIMenu.java"
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI"
+    },
+    {
+      "name": "EchoPaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/EchoPasteItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/echo_paste.json"
+        ]
+      }
+    },
+    {
+      "name": "PowderedAncientDebris",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powdered_ancient_debris",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/PowderedAncientDebrisItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/powdered_ancient_debris.json"
+        ]
+      }
+    },
+    {
+      "name": "DistilleryOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillery_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/DistilleryOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "DistilleryBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillery_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/DistilleryBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI"
+    },
+    {
+      "name": "S4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S11",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S12",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_12",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S13",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_13",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S13Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S14",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_14",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S14Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S15",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_15",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S15Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S16",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_16",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S16Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S17",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_17",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S17Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S18",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_18",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S18Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S19",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_19",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S19Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S20",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_20",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S20Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S21",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_21",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S21Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S22",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_22",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S22Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S23",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_23",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S23Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S24",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_24",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S24Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S25",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_25",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S25Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S26",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_26",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S26Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S27",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_27",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S27Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S28",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_28",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S28Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S29",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_29",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S29Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S30",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_30",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S30Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S31",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_31",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S31Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S32",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_32",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S32Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S33",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_33",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S33Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S34",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_34",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S34Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S35",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_35",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S35Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S36",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_36",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S36Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S37",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_37",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S37Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S38",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_38",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S38Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S39",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_39",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S39Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S40",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_40",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S40Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S41",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_41",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S41Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S42",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_42",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S42Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S43",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_43",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S43Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S44",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_44",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S44Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S45",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_45",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S45Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S46",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_46",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S46Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S47",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_47",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S47Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S48",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_48",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S48Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S49",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_49",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S49Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S50",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_50",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S50Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S51",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_51",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S51Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S52",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_52",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S52Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S53",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_53",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S53Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S54",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_54",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S54Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S55",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_55",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S55Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S56",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_56",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S56Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S57",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_57",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S57Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S58",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_58",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S58Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S59",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_59",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S59Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S60",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_60",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S60Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S61",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_61",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S61Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S62",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_62",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S62Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S63",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_63",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S63Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S64",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_64",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S64Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S65",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_65",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S65Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S66",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_66",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S66Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S67",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_67",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S67Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S68",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_68",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S68Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S69",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_69",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S69Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S70",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_70",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S70Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "S71",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_71",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/S71Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI/DistilleryArrow"
+    },
+    {
+      "name": "NetherWartExtract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wart_extract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/NetherWartExtractItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/nether_wart_extract.json"
+        ]
+      }
+    },
+    {
+      "name": "TorchflowerExtract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torchflower_extract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/TorchflowerExtractItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/torchflower_extract.json"
+        ]
+      }
+    },
+    {
+      "name": "Citrinium",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "citrinium",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MembraneExtract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "membrane_extract",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/membrane_extract.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/MembraneExtractItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Distilledghasttear",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distilledghasttear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/distilledghasttear.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/DistilledghasttearItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MagmaticCobblestoneBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magmatic_cobblestone_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/MagmaticCobblestoneBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagmaticCobblestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magmatic_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/blockstates/magmatic_cobblestone.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/MagmaticCobblestoneBlock.java",
+          "src/main/resources/assets/minecraft_drugs/models/block/magmatic_cobblestone.json",
+          "src/main/resources/data/minecraft_drugs/loot_table/blocks/magmatic_cobblestone.json",
+          "src/main/resources/assets/minecraft_drugs/models/item/magmatic_cobblestone.json"
+        ]
+      }
+    },
+    {
+      "name": "MagmaCreamExtract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magma_cream_extract",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/magma_cream_extract.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/MagmaCreamExtractItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BeetrootExtract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beetroot_extract",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/beetroot_extract.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BeetrootExtractItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BottleofLava",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottleof_lava",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/bottleof_lava.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BottleofLavaItem.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Distillery"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:Distillery"
+    ],
+    "BLOCKS:minecraft:timer": []
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.minecraft_drugs.beetroot_extract": "Beetroot Extract",
+      "item.minecraft_drugs.torchflower_extract": "Torchflower Extract",
+      "item.minecraft_drugs.bottleof_lava": "Beetroot Extract",
+      "item.minecraft_drugs.powdered_ancient_debris": "Powdered Ancient Debris",
+      "item.minecraft_drugs.magma_cream_extract": "Magma Cream Extract",
+      "item.minecraft_drugs.echo_paste": "Echo Paste",
+      "block.minecraft_drugs.distillery": "Distillery",
+      "item.minecraft_drugs.nether_wart_extract": "Nether Wart Extract",
+      "item.minecraft_drugs.membrane_extract": "Membrane Extract",
+      "item_group.minecraft_drugs.citrinium": "Citrinium",
+      "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
+      "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/mixins.minecraft_drugs.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
+      "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMenus.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlocks.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlockEntities.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Distillery",
+        "children": [
+          {
+            "name": "DistilleryGUI",
+            "children": [
+              {
+                "name": "DistilleryArrow",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "minecraft_drugs",
+    "modName": "MInecraft_Drugs",
+    "version": "1.0.0",
+    "author": "rober, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.minecraftdrugs"
+  },
+  "mcreatorVersion": 202500228610
+}

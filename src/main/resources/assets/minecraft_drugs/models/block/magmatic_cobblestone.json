@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_drugs:block/magmatic_cobblestone",
+    "up": "minecraft_drugs:block/magmatic_cobblestone",
+    "north": "minecraft_drugs:block/magmatic_cobblestone",
+    "east": "minecraft_drugs:block/magmatic_cobblestone",
+    "south": "minecraft_drugs:block/magmatic_cobblestone",
+    "west": "minecraft_drugs:block/magmatic_cobblestone",
+    "particle": "minecraft_drugs:block/magmatic_cobblestone"
+  },
+  "render_type": "solid"
+}

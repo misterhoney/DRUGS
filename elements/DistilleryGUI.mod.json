@@ -1,0 +1,1025 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 278,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "minecraf212r1uitest.png",
+          "use1Xscale": false,
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Test"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S2"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S3"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S4"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S5"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S6"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S7"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S8"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S9"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S10"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S11"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S12"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S13"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S14"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S15"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S16"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S17"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S18"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S19"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S20"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S21"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S22"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss23.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S23"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss24.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S24"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss25.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S25"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss26.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S26"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss27.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S27"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss28.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S28"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss29.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S29"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S30"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss31.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S31"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S32"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss33.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S33"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss34.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S34"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss35.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S35"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss36.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S36"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss37.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S37"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss38.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S38"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss39.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S39"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S40"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss41.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S41"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss42.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S42"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss43.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S43"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss44.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S44"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss45.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S45"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss46.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S46"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss47.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S47"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss48.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S48"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss49.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S49"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S50"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss51.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S51"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss52.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S52"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss53.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S53"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss54.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S54"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss55.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S55"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss56.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S56"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss57.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S57"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss58.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S58"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss59.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S59"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss60.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S60"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss61.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S61"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss62.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S62"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss63.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S63"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss64.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S64"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss65.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S65"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss66.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S66"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss67.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S67"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss68.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S68"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss69.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S69"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss70.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S70"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss71.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "S71"
+          },
+          "x": 125,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 132,
+          "y": 44,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

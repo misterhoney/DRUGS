@@ -3,14 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ancient2",
+    "texture": "membrane_char",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "Powdered Ancient Debris",
+    "name": "Charred Phantom Membrane",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Citrinium"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -32,7 +36,7 @@
       "fixedValue": false
     },
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 99,
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

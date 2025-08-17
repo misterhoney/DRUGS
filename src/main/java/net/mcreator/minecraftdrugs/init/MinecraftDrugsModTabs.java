@@ -31,6 +31,8 @@ public class MinecraftDrugsModTabs {
 				tabData.accept(MinecraftDrugsModItems.MAGMA_CREAM_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.BEETROOT_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.BOTTLEOF_LAVA.get());
+				tabData.accept(MinecraftDrugsModItems.MEMBRANE_CHAR.get());
+				tabData.accept(MinecraftDrugsModItems.CHARREDPRISMARINESHARD.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

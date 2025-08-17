@@ -12,5 +12,8 @@
   "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
   "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear",
   "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON",
-  "item_group.minecraft_drugs.tests": "Tests"
+  "item_group.minecraft_drugs.tests": "Tests",
+  "item.minecraft_drugs.Charred_phantom_membrane": "Membrane Char",
+  "item.minecraft_drugs.charredprismarineshard": "Charred Prismarine Shard",
+  "item.minecraft_drugs.membrane_char": "Charred Phantom Membrane"
 }

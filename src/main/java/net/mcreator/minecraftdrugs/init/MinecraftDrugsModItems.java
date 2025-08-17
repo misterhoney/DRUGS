@@ -15,9 +15,11 @@ import net.mcreator.minecraftdrugs.item.TorchflowerExtractItem;
 import net.mcreator.minecraftdrugs.item.PowderedAncientDebrisItem;
 import net.mcreator.minecraftdrugs.item.NetherWartExtractItem;
 import net.mcreator.minecraftdrugs.item.MembraneExtractItem;
+import net.mcreator.minecraftdrugs.item.MembraneCharItem;
 import net.mcreator.minecraftdrugs.item.MagmaCreamExtractItem;
 import net.mcreator.minecraftdrugs.item.EchoPasteItem;
 import net.mcreator.minecraftdrugs.item.DistilledghasttearItem;
+import net.mcreator.minecraftdrugs.item.CharredprismarineshardItem;
 import net.mcreator.minecraftdrugs.item.BottleofLavaItem;
 import net.mcreator.minecraftdrugs.item.BeetrootExtractItem;
 import net.mcreator.minecraftdrugs.block.display.DistilleryDisplayItem;
@@ -36,6 +38,8 @@ public class MinecraftDrugsModItems {
 	public static final DeferredItem<Item> MAGMA_CREAM_EXTRACT = REGISTRY.register("magma_cream_extract", MagmaCreamExtractItem::new);
 	public static final DeferredItem<Item> BEETROOT_EXTRACT = REGISTRY.register("beetroot_extract", BeetrootExtractItem::new);
 	public static final DeferredItem<Item> BOTTLEOF_LAVA = REGISTRY.register("bottleof_lava", BottleofLavaItem::new);
+	public static final DeferredItem<Item> MEMBRANE_CHAR = REGISTRY.register("membrane_char", MembraneCharItem::new);
+	public static final DeferredItem<Item> CHARREDPRISMARINESHARD = REGISTRY.register("charredprismarineshard", CharredprismarineshardItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

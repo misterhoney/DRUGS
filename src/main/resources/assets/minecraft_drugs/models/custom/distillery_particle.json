@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft_drugs:displaysettings/distillery_display",
+  "parent": "minecraft_drugs:displaysettings/distillery.display2",
   "textures": {
     "particle": "minecraft_drugs:block/no_bottle"
   }

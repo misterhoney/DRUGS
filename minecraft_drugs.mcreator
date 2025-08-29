@@ -2598,10 +2598,179 @@
           "src/main/resources/assets/minecraft_drugs/models/item/charredprismarineshard.json"
         ]
       }
+    },
+    {
+      "name": "MortarandPestle",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mortarand_pestle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/block/display/MortarandPestleDisplayItem.java",
+          "src/main/resources/assets/minecraft_drugs/blockstates/mortarand_pestle.json",
+          "src/main/resources/assets/minecraft_drugs/models/item/mortarand_pestle.json",
+          "src/main/resources/assets/minecraft_drugs/models/custom/mortarand_pestle_particle.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/MortarandPestleBlockModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/MortarandPestleBlock.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/MortarandPestleDisplayModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/entity/MortarandPestleTileEntity.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/MortarandPestleDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/MortarandPestleTileRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "CharedMembrane",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chared_membrane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/chared_membrane.json"
+        ]
+      }
+    },
+    {
+      "name": "CharedPrismarine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chared_prismarine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/chared_prismarine.json"
+        ]
+      }
+    },
+    {
+      "name": "GroundPitcherPodFlakes",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_pitcher_pod_flakes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/GroundPitcherPodFlakesItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/ground_pitcher_pod_flakes.json"
+        ]
+      }
+    },
+    {
+      "name": "GroundTorchFlowerFlakes",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_torch_flower_flakes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/GroundTorchFlowerFlakesItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/ground_torch_flower_flakes.json"
+        ]
+      }
+    },
+    {
+      "name": "BreezePowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breeze_powder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/BreezePowderItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/breeze_powder.json"
+        ]
+      }
+    },
+    {
+      "name": "Motar",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "motar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/world/inventory/MotarMenu.java",
+          "src/main/java/net/mcreator/minecraftdrugs/client/gui/MotarScreen.java",
+          "src/main/java/net/mcreator/minecraftdrugs/network/MotarButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Crush",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crush",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/CrushProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PitcherPaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitcher_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/PitcherPasteItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/pitcher_paste.json"
+        ]
+      }
+    },
+    {
+      "name": "MembranePaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "membrane_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/MembranePasteItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/membrane_paste.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "grind",
+      "files": [
+        "mortargrindhigh",
+        "mortar_grindlow",
+        "mortargrind"
+      ],
+      "category": "block",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Distillery"
@@ -2611,7 +2780,29 @@
     ],
     "BLOCKS:minecraft:timer": []
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:Citrinium": [
+      "Distillery",
+      "MortarandPestle",
+      "BreezePowder",
+      "NetherWartExtract",
+      "TorchflowerExtract",
+      "MembraneExtract",
+      "Distilledghasttear",
+      "MagmaCreamExtract",
+      "BeetrootExtract",
+      "BottleofLava",
+      "MembraneChar",
+      "Charredprismarineshard",
+      "PowderedAncientDebris",
+      "EchoPaste",
+      "GroundPitcherPodFlakes",
+      "GroundTorchFlowerFlakes",
+      "MagmaticCobblestone",
+      "PitcherPaste",
+      "MembranePaste"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.minecraft_drugs.beetroot_extract": "Beetroot Extract",
@@ -2630,15 +2821,24 @@
       "item_group.minecraft_drugs.tests": "Tests",
       "item.minecraft_drugs.Charred_phantom_membrane": "Membrane Char",
       "item.minecraft_drugs.charredprismarineshard": "Charred Prismarine Shard",
-      "item.minecraft_drugs.membrane_char": "Charred Phantom Membrane"
+      "item.minecraft_drugs.membrane_char": "Charred Phantom Membrane",
+      "block.minecraft_drugs.mortarand_pestle": "Mortarand Pestle",
+      "item.minecraft_drugs.ground_pitcher_pod_flakes": "Ground Pitcher Pod Flakes",
+      "item.minecraft_drugs.ground_torch_flower_flakes": "Ground Torchflower Flakes",
+      "item.minecraft_drugs.breeze_powder": "Breeze Powder",
+      "subtitles.grind": "",
+      "item.minecraft_drugs.pitcher_paste": "Pitcher Paste",
+      "item.minecraft_drugs.membrane_paste": "Membrane Paste"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/minecraftdrugs/MinecraftDrugsMod.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModTabs.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModSounds.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/mixins.minecraft_drugs.json",
+      "src/main/resources/assets/minecraft_drugs/sounds.json",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
       "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",

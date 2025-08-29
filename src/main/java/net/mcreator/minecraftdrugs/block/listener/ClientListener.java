@@ -9,7 +9,9 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModBlockEntities;
+import net.mcreator.minecraftdrugs.block.renderer.MortarandPestleTileRenderer;
 import net.mcreator.minecraftdrugs.block.renderer.DistilleryTileRenderer;
+import net.mcreator.minecraftdrugs.block.entity.MortarandPestleTileEntity;
 import net.mcreator.minecraftdrugs.block.entity.DistilleryTileEntity;
 import net.mcreator.minecraftdrugs.MinecraftDrugsMod;
 
@@ -19,5 +21,6 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer((BlockEntityType<DistilleryTileEntity>) MinecraftDrugsModBlockEntities.DISTILLERY.get(), context -> new DistilleryTileRenderer());
+		event.registerBlockEntityRenderer((BlockEntityType<MortarandPestleTileEntity>) MinecraftDrugsModBlockEntities.MORTARAND_PESTLE.get(), context -> new MortarandPestleTileRenderer());
 	}
 }

@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.minecraftdrugs.block.entity.MortarandPestleTileEntity;
 import net.mcreator.minecraftdrugs.block.entity.DistilleryTileEntity;
 import net.mcreator.minecraftdrugs.MinecraftDrugsMod;
 
@@ -23,6 +24,7 @@ import net.mcreator.minecraftdrugs.MinecraftDrugsMod;
 public class MinecraftDrugsModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, MinecraftDrugsMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> DISTILLERY = register("distillery", MinecraftDrugsModBlocks.DISTILLERY, DistilleryTileEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> MORTARAND_PESTLE = register("mortarand_pestle", MinecraftDrugsModBlocks.MORTARAND_PESTLE, MortarandPestleTileEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +35,6 @@ public class MinecraftDrugsModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, DISTILLERY.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MORTARAND_PESTLE.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
 	}
 }

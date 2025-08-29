@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "Items.PRISMARINE_SHARD"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Charredprismarineshard"
+    },
+    "name": "chared_prismarine",
+    "namespace": "mod"
+  }
+}

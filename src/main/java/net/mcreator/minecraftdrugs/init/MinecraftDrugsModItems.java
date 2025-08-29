@@ -13,15 +13,21 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.minecraftdrugs.item.TorchflowerExtractItem;
 import net.mcreator.minecraftdrugs.item.PowderedAncientDebrisItem;
+import net.mcreator.minecraftdrugs.item.PitcherPasteItem;
 import net.mcreator.minecraftdrugs.item.NetherWartExtractItem;
+import net.mcreator.minecraftdrugs.item.MembranePasteItem;
 import net.mcreator.minecraftdrugs.item.MembraneExtractItem;
 import net.mcreator.minecraftdrugs.item.MembraneCharItem;
 import net.mcreator.minecraftdrugs.item.MagmaCreamExtractItem;
+import net.mcreator.minecraftdrugs.item.GroundTorchFlowerFlakesItem;
+import net.mcreator.minecraftdrugs.item.GroundPitcherPodFlakesItem;
 import net.mcreator.minecraftdrugs.item.EchoPasteItem;
 import net.mcreator.minecraftdrugs.item.DistilledghasttearItem;
 import net.mcreator.minecraftdrugs.item.CharredprismarineshardItem;
+import net.mcreator.minecraftdrugs.item.BreezePowderItem;
 import net.mcreator.minecraftdrugs.item.BottleofLavaItem;
 import net.mcreator.minecraftdrugs.item.BeetrootExtractItem;
+import net.mcreator.minecraftdrugs.block.display.MortarandPestleDisplayItem;
 import net.mcreator.minecraftdrugs.block.display.DistilleryDisplayItem;
 import net.mcreator.minecraftdrugs.MinecraftDrugsMod;
 
@@ -40,6 +46,12 @@ public class MinecraftDrugsModItems {
 	public static final DeferredItem<Item> BOTTLEOF_LAVA = REGISTRY.register("bottleof_lava", BottleofLavaItem::new);
 	public static final DeferredItem<Item> MEMBRANE_CHAR = REGISTRY.register("membrane_char", MembraneCharItem::new);
 	public static final DeferredItem<Item> CHARREDPRISMARINESHARD = REGISTRY.register("charredprismarineshard", CharredprismarineshardItem::new);
+	public static final DeferredItem<Item> MORTARAND_PESTLE = REGISTRY.register(MinecraftDrugsModBlocks.MORTARAND_PESTLE.getId().getPath(), () -> new MortarandPestleDisplayItem(MinecraftDrugsModBlocks.MORTARAND_PESTLE.get(), new Item.Properties()));
+	public static final DeferredItem<Item> GROUND_PITCHER_POD_FLAKES = REGISTRY.register("ground_pitcher_pod_flakes", GroundPitcherPodFlakesItem::new);
+	public static final DeferredItem<Item> GROUND_TORCH_FLOWER_FLAKES = REGISTRY.register("ground_torch_flower_flakes", GroundTorchFlowerFlakesItem::new);
+	public static final DeferredItem<Item> BREEZE_POWDER = REGISTRY.register("breeze_powder", BreezePowderItem::new);
+	public static final DeferredItem<Item> PITCHER_PASTE = REGISTRY.register("pitcher_paste", PitcherPasteItem::new);
+	public static final DeferredItem<Item> MEMBRANE_PASTE = REGISTRY.register("membrane_paste", MembranePasteItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

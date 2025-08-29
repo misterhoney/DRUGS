@@ -1,0 +1,18 @@
+{
+  "grind": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:mortargrindhigh",
+        "stream": false
+      },
+      {
+        "name": "minecraft_drugs:mortar_grindlow",
+        "stream": false
+      },
+      {
+        "name": "minecraft_drugs:mortargrind",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -15,5 +15,12 @@
   "item_group.minecraft_drugs.tests": "Tests",
   "item.minecraft_drugs.Charred_phantom_membrane": "Membrane Char",
   "item.minecraft_drugs.charredprismarineshard": "Charred Prismarine Shard",
-  "item.minecraft_drugs.membrane_char": "Charred Phantom Membrane"
+  "item.minecraft_drugs.membrane_char": "Charred Phantom Membrane",
+  "block.minecraft_drugs.mortarand_pestle": "Mortarand Pestle",
+  "item.minecraft_drugs.ground_pitcher_pod_flakes": "Ground Pitcher Pod Flakes",
+  "item.minecraft_drugs.ground_torch_flower_flakes": "Ground Torchflower Flakes",
+  "item.minecraft_drugs.breeze_powder": "Breeze Powder",
+  "subtitles.grind": "",
+  "item.minecraft_drugs.pitcher_paste": "Pitcher Paste",
+  "item.minecraft_drugs.membrane_paste": "Membrane Paste"
 }

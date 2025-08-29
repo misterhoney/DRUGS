@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft_drugs:displaysettings/mortarpestle3.display",
+  "textures": {
+    "particle": "minecraft_drugs:block/mortarpestle.texture"
+  }
+}

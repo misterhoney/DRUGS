@@ -23,16 +23,24 @@ public class MinecraftDrugsModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CITRINIUM = REGISTRY.register("citrinium",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.minecraft_drugs.citrinium")).icon(() -> new ItemStack(MinecraftDrugsModItems.NETHER_WART_EXTRACT.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MinecraftDrugsModBlocks.DISTILLERY.get().asItem());
+				tabData.accept(MinecraftDrugsModBlocks.MORTARAND_PESTLE.get().asItem());
+				tabData.accept(MinecraftDrugsModItems.BREEZE_POWDER.get());
 				tabData.accept(MinecraftDrugsModItems.NETHER_WART_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.TORCHFLOWER_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.MEMBRANE_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.DISTILLEDGHASTTEAR.get());
-				tabData.accept(MinecraftDrugsModBlocks.MAGMATIC_COBBLESTONE.get().asItem());
 				tabData.accept(MinecraftDrugsModItems.MAGMA_CREAM_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.BEETROOT_EXTRACT.get());
 				tabData.accept(MinecraftDrugsModItems.BOTTLEOF_LAVA.get());
 				tabData.accept(MinecraftDrugsModItems.MEMBRANE_CHAR.get());
 				tabData.accept(MinecraftDrugsModItems.CHARREDPRISMARINESHARD.get());
+				tabData.accept(MinecraftDrugsModItems.POWDERED_ANCIENT_DEBRIS.get());
+				tabData.accept(MinecraftDrugsModItems.ECHO_PASTE.get());
+				tabData.accept(MinecraftDrugsModItems.GROUND_PITCHER_POD_FLAKES.get());
+				tabData.accept(MinecraftDrugsModItems.GROUND_TORCH_FLOWER_FLAKES.get());
+				tabData.accept(MinecraftDrugsModBlocks.MAGMATIC_COBBLESTONE.get().asItem());
+				tabData.accept(MinecraftDrugsModItems.PITCHER_PASTE.get());
+				tabData.accept(MinecraftDrugsModItems.MEMBRANE_PASTE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

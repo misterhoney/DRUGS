@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.minecraftdrugs.world.inventory.MotarMenu;
 import net.mcreator.minecraftdrugs.world.inventory.DistilleryGUIMenu;
 import net.mcreator.minecraftdrugs.network.MenuStateUpdateMessage;
 import net.mcreator.minecraftdrugs.MinecraftDrugsMod;
@@ -24,6 +25,7 @@ import java.util.Map;
 public class MinecraftDrugsModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, MinecraftDrugsMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<DistilleryGUIMenu>> DISTILLERY_GUI = REGISTRY.register("distillery_gui", () -> IMenuTypeExtension.create(DistilleryGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MotarMenu>> MOTAR = REGISTRY.register("motar", () -> IMenuTypeExtension.create(MotarMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

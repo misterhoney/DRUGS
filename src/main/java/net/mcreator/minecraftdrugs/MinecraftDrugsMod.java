@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModTabs;
+import net.mcreator.minecraftdrugs.init.MinecraftDrugsModSounds;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModMenus;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModItems;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModBlocks;
@@ -41,7 +42,7 @@ public class MinecraftDrugsMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
+		MinecraftDrugsModSounds.REGISTRY.register(modEventBus);
 		MinecraftDrugsModBlocks.REGISTRY.register(modEventBus);
 		MinecraftDrugsModBlockEntities.REGISTRY.register(modEventBus);
 		MinecraftDrugsModItems.REGISTRY.register(modEventBus);

@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ancient2",
+    "texture": "pitcher_paste",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "Powdered Ancient Debris",
+    "name": "Pitcher Paste",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -36,7 +36,7 @@
       "fixedValue": false
     },
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 99,
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft_drugs:item/membrane_paste"
+    "layer0": "minecraft_drugs:item/membrane_paste2"
   }
 }

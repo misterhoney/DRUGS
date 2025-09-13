@@ -5,6 +5,8 @@ import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -13,9 +15,14 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModItems;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModBlocks;
@@ -60,6 +67,20 @@ public class DistilleryOnTickUpdateProcedure {
 							_blockEntity.getPersistentData().putDouble("timer", 1);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1, false);
+						}
 					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
@@ -194,6 +215,20 @@ public class DistilleryOnTickUpdateProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -326,6 +361,20 @@ public class DistilleryOnTickUpdateProcedure {
 							_blockEntity.getPersistentData().putDouble("timer", 1);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1, false);
+						}
 					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
@@ -460,6 +509,167 @@ public class DistilleryOnTickUpdateProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("mStage", 71);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeResult", (BuiltInRegistries.ITEM.getKey(result.getItem()).toString()));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeWaste", (BuiltInRegistries.ITEM.getKey(waste.getItem()).toString()));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeItem_1", (BuiltInRegistries.ITEM.getKey(item1.getItem()).toString()));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeItem_2", (BuiltInRegistries.ITEM.getKey(item2.getItem()).toString()));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeItem_3", (BuiltInRegistries.ITEM.getKey(item3.getItem()).toString()));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item3.getItem()) {
+					{
+						int _value = 1;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+					{
+						int _value = 2;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+				} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item2.getItem()) {
+					{
+						int _value = 1;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+					{
+						int _value = 0;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+				} else {
+					{
+						int _value = 1;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+					{
+						int _value = 0;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+				}
+			}
+			if ((getBlockNBTString(world, BlockPos.containing(x, y, z), "recipeResult")).equals("")) {
+				item1 = new ItemStack(MinecraftDrugsModItems.MEMBRANE_PASTE.get()).copy();
+				item2 = new ItemStack(Blocks.MAGMA_BLOCK).copy();
+				item3 = new ItemStack(Items.POTION).copy();
+				waste = new ItemStack(MinecraftDrugsModBlocks.MAGMATIC_COBBLESTONE.get()).copy();
+				result = new ItemStack(MinecraftDrugsModItems.MEMBRANE_EXTRACT.get()).copy();
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == item1.getItem() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == item2.getItem()
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == item3.getItem()
+						&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == result.getItem() || itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0)) {
+					{
+						int _value = 2;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+					{
+						int _value = 1;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("timer", 1);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -592,6 +802,20 @@ public class DistilleryOnTickUpdateProcedure {
 							_blockEntity.getPersistentData().putDouble("timer", 1);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilstart")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:distilling")), SoundSource.NEUTRAL, 1, 1, false);
+						}
 					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
@@ -788,6 +1012,20 @@ public class DistilleryOnTickUpdateProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilfinish")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft_drugs:boilfinish")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					{
+						int _value = 0;
+						BlockPos _pos = BlockPos.containing(x, y, z);
+						BlockState _bs = world.getBlockState(_pos);
+						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+					}
 				} else {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
@@ -800,6 +1038,9 @@ public class DistilleryOnTickUpdateProcedure {
 					}
 				}
 			} else {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"/stopsound @a");
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

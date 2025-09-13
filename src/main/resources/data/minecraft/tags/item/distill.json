@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:magma_cream",
+    "minecraft:ghast_tear",
+    "minecraft:nether_wart",
+    "minecraft_drugs:membrane_paste",
+    "minecraft:torchflower",
+    "minecraft:beetroot"
+  ]
+}

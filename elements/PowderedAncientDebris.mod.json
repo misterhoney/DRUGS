@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ancient2",
+    "texture": "powdered_ancient_debris",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

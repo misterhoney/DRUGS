@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_drugs:custom/mixing_table_particle"
+    },
+    "facing=east": {
+      "model": "minecraft_drugs:custom/mixing_table_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_drugs:custom/mixing_table_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_drugs:custom/mixing_table_particle",
+      "y": 270
+    }
+  }
+}

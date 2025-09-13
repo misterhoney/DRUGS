@@ -335,6 +335,7 @@ public class DistilleryGUIScreen extends AbstractContainerScreen<DistilleryGUIMe
 		if (S71Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(ResourceLocation.parse("minecraft_drugs:textures/screens/ss71.png"), this.leftPos + -1, this.topPos + 1, 0, 0, 180, 84, 180, 84);
 		}
+		guiGraphics.blit(ResourceLocation.parse("minecraft_drugs:textures/screens/gui.png"), this.leftPos + 153, this.topPos + 8, 0, 0, 16, 16, 16, 16);
 		RenderSystem.disableBlend();
 	}
 

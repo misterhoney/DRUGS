@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft_drugs:displaysettings/copperbatter.display",
+  "textures": {
+    "layer0": "minecraft_drugs:item/copper_battery"
+  }
+}

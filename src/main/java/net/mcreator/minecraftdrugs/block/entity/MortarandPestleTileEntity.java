@@ -143,7 +143,7 @@ public class MortarandPestleTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Mortarand Pestle");
+		return Component.literal("Mortar and Pestle");
 	}
 
 	@Override

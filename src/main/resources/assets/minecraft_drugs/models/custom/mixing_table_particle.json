@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft_drugs:displaysettings/mixingtable.display",
+  "textures": {
+    "particle": "minecraft_drugs:block/mixing_table"
+  }
+}

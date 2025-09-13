@@ -1,0 +1,92 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Craving",
+    "icon": "craving",
+    "color": {
+      "value": -13408768,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": true,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": -0.049999999999999996,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": -0.09999999999999999,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -5.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": -5.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MINING_EFFICIENCY"
+        },
+        "amount": -0.2,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "KNOCKBACK_RESISTANCE"
+        },
+        "amount": -5.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MAX_HEALTH"
+        },
+        "amount": -2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.049999999999999996,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": -0.3,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SAFE_FALL_DISTANCE"
+        },
+        "amount": -2.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

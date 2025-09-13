@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:minecraft:liquids"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -33,7 +33,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "Blocks.MAGMA"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -56,6 +56,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Xp"
+          },
           "x": 205,
           "y": 62,
           "locked": false
@@ -998,7 +1001,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:minecraft:distill"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -1010,6 +1013,16 @@
           "dropItemsWhenNotBound": true,
           "x": 132,
           "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui.png",
+          "use1Xscale": false,
+          "x": 279,
+          "y": 45,
           "locked": false
         }
       }

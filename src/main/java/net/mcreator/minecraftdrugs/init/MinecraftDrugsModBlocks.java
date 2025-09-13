@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.minecraftdrugs.block.MortarandPestleBlock;
+import net.mcreator.minecraftdrugs.block.MixingTableBlock;
 import net.mcreator.minecraftdrugs.block.MagmaticCobblestoneBlock;
 import net.mcreator.minecraftdrugs.block.DistilleryBlock;
 import net.mcreator.minecraftdrugs.MinecraftDrugsMod;
@@ -18,6 +19,7 @@ public class MinecraftDrugsModBlocks {
 	public static final DeferredBlock<Block> DISTILLERY = REGISTRY.register("distillery", DistilleryBlock::new);
 	public static final DeferredBlock<Block> MAGMATIC_COBBLESTONE = REGISTRY.register("magmatic_cobblestone", MagmaticCobblestoneBlock::new);
 	public static final DeferredBlock<Block> MORTARAND_PESTLE = REGISTRY.register("mortarand_pestle", MortarandPestleBlock::new);
+	public static final DeferredBlock<Block> MIXING_TABLE = REGISTRY.register("mixing_table", MixingTableBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

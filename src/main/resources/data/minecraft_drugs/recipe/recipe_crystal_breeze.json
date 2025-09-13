@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft_drugs:bucketof_crystallized_breezemphetamine"
+    }
+  ],
+  "result": {
+    "id": "minecraft_drugs:crystallized_breezemphetamine",
+    "count": 2
+  }
+}

@@ -32,6 +32,7 @@
       "registry_name": "distillery_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/network/DistilleryGUISlotMessage.java",
           "src/main/java/net/mcreator/minecraftdrugs/client/gui/DistilleryGUIScreen.java",
           "src/main/java/net/mcreator/minecraftdrugs/world/inventory/DistilleryGUIMenu.java"
         ]
@@ -49,7 +50,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/EchoPasteItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/echo_paste.json"
         ]
-      }
+      },
+      "path": "~/Items/Crushed"
     },
     {
       "name": "PowderedAncientDebris",
@@ -62,7 +64,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/PowderedAncientDebrisItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/powdered_ancient_debris.json"
         ]
-      }
+      },
+      "path": "~/Items/Crushed"
     },
     {
       "name": "DistilleryOnTickUpdate",
@@ -2409,7 +2412,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/NetherWartExtractItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/nether_wart_extract.json"
         ]
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "TorchflowerExtract",
@@ -2422,7 +2426,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/TorchflowerExtractItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/torchflower_extract.json"
         ]
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "Citrinium",
@@ -2445,7 +2450,8 @@
           "src/main/resources/assets/minecraft_drugs/models/item/membrane_extract.json",
           "src/main/java/net/mcreator/minecraftdrugs/item/MembraneExtractItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "Distilledghasttear",
@@ -2458,7 +2464,8 @@
           "src/main/resources/assets/minecraft_drugs/models/item/distilledghasttear.json",
           "src/main/java/net/mcreator/minecraftdrugs/item/DistilledghasttearItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "MagmaticCobblestoneBlockAdded",
@@ -2498,10 +2505,10 @@
       "registry_name": "magmatic_cobblestone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/minecraftdrugs/block/MagmaticCobblestoneBlock.java",
-          "src/main/resources/data/minecraft_drugs/loot_table/blocks/magmatic_cobblestone.json",
-          "src/main/resources/assets/minecraft_drugs/models/block/magmatic_cobblestone.json",
           "src/main/resources/assets/minecraft_drugs/blockstates/magmatic_cobblestone.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/MagmaticCobblestoneBlock.java",
+          "src/main/resources/assets/minecraft_drugs/models/block/magmatic_cobblestone.json",
+          "src/main/resources/data/minecraft_drugs/loot_table/blocks/magmatic_cobblestone.json",
           "src/main/resources/assets/minecraft_drugs/models/item/magmatic_cobblestone.json"
         ]
       }
@@ -2517,7 +2524,8 @@
           "src/main/resources/assets/minecraft_drugs/models/item/magma_cream_extract.json",
           "src/main/java/net/mcreator/minecraftdrugs/item/MagmaCreamExtractItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "BeetrootExtract",
@@ -2530,7 +2538,8 @@
           "src/main/resources/assets/minecraft_drugs/models/item/beetroot_extract.json",
           "src/main/java/net/mcreator/minecraftdrugs/item/BeetrootExtractItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "BottleofLava",
@@ -2543,17 +2552,8 @@
           "src/main/resources/assets/minecraft_drugs/models/item/bottleof_lava.json",
           "src/main/java/net/mcreator/minecraftdrugs/item/BottleofLavaItem.java"
         ]
-      }
-    },
-    {
-      "name": "Tests",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tests",
-      "metadata": {
-        "files": []
-      }
+      },
+      "path": "~/Items/Extracts"
     },
     {
       "name": "BottleofLavaPlayerFinishesUsingItem",
@@ -2584,7 +2584,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/MembraneCharItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/membrane_char.json"
         ]
-      }
+      },
+      "path": "~/Items/Chars"
     },
     {
       "name": "Charredprismarineshard",
@@ -2597,7 +2598,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/CharredprismarineshardItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/charredprismarineshard.json"
         ]
-      }
+      },
+      "path": "~/Items/Chars"
     },
     {
       "name": "MortarandPestle",
@@ -2618,7 +2620,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/block/renderer/MortarandPestleDisplayItemRenderer.java",
           "src/main/java/net/mcreator/minecraftdrugs/block/renderer/MortarandPestleTileRenderer.java"
         ]
-      }
+      },
+      "path": "~/Motar_and_pestle"
     },
     {
       "name": "CharedMembrane",
@@ -2655,7 +2658,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/GroundPitcherPodFlakesItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/ground_pitcher_pod_flakes.json"
         ]
-      }
+      },
+      "path": "~/Items/Crushed"
     },
     {
       "name": "GroundTorchFlowerFlakes",
@@ -2668,7 +2672,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/GroundTorchFlowerFlakesItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/ground_torch_flower_flakes.json"
         ]
-      }
+      },
+      "path": "~/Items/Crushed"
     },
     {
       "name": "BreezePowder",
@@ -2681,7 +2686,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/BreezePowderItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/breeze_powder.json"
         ]
-      }
+      },
+      "path": "~/Items/Crushed"
     },
     {
       "name": "Motar",
@@ -2695,7 +2701,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/client/gui/MotarScreen.java",
           "src/main/java/net/mcreator/minecraftdrugs/network/MotarButtonMessage.java"
         ]
-      }
+      },
+      "path": "~/Motar_and_pestle"
     },
     {
       "name": "Crush",
@@ -2729,7 +2736,8 @@
         "files": [
           "src/main/java/net/mcreator/minecraftdrugs/procedures/CrushProcedure.java"
         ]
-      }
+      },
+      "path": "~/Motar_and_pestle"
     },
     {
       "name": "PitcherPaste",
@@ -2742,7 +2750,8 @@
           "src/main/java/net/mcreator/minecraftdrugs/item/PitcherPasteItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/pitcher_paste.json"
         ]
-      }
+      },
+      "path": "~/Items/Crushed"
     },
     {
       "name": "MembranePaste",
@@ -2754,6 +2763,1304 @@
         "files": [
           "src/main/java/net/mcreator/minecraftdrugs/item/MembranePasteItem.java",
           "src/main/resources/assets/minecraft_drugs/models/item/membrane_paste.json"
+        ]
+      },
+      "path": "~/Items/Crushed"
+    },
+    {
+      "name": "MixingTable",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_table",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/MixingTableDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/MixingTableBlock.java",
+          "src/main/resources/assets/minecraft_drugs/blockstates/mixing_table.json",
+          "src/main/java/net/mcreator/minecraftdrugs/block/display/MixingTableDisplayItem.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/MixingTableDisplayModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/entity/MixingTableTileEntity.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/renderer/MixingTableTileRenderer.java",
+          "src/main/java/net/mcreator/minecraftdrugs/block/model/MixingTableBlockModel.java",
+          "src/main/resources/assets/minecraft_drugs/models/custom/mixing_table_particle.json",
+          "src/main/resources/assets/minecraft_drugs/models/item/mixing_table.json"
+        ]
+      }
+    },
+    {
+      "name": "Mixingtablegui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixingtablegui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/gui/MixingtableguiScreen.java",
+          "src/main/java/net/mcreator/minecraftdrugs/network/MixingtableguiButtonMessage.java",
+          "src/main/java/net/mcreator/minecraftdrugs/world/inventory/MixingtableguiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Xp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/XpProcedure.java"
+        ]
+      },
+      "path": "~/Distillery/DistilleryGUI"
+    },
+    {
+      "name": "VapePodPropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_property_value_provider",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/VapePodPropertyValueProviderProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VapePodGlowBlowFlavor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_glow_blow_flavor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_glow_blow_flavor.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodGlowBlowFlavorItem.java"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodGlowBlowFlavorPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_glow_blow_flavor_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/VapePodGlowBlowFlavorPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "GlowBlowParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_blow_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/glow_blow_particle.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/GlowBlowParticleParticle.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "VapePodMelon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_melon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_melon.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodMelonItem.java"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodPillager",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_pillager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodPillagerItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_pillager.json"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodMagma",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_magma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodMagmaItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_magma.json"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodwitch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_podwitch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodwitchItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_podwitch.json"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodPitcher",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_pitcher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_pitcher.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodPitcherItem.java"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodPhantom",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_phantom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_phantom.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodPhantomItem.java"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "VapePodGaurdian",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod_gaurdian",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodGaurdianItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod_gaurdian.json"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "Vapepod2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod2Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "Vapepod3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod3Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "Vapepod4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod4Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "Vapepod5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod5Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "Vapepod6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod6Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "Vapepod7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_7",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod7Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "Vape1p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_1p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape1pParticle.java",
+          "src/main/resources/assets/minecraft_drugs/particles/vape_1p.json"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape2p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_2p",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/vape_2p.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape2pParticle.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape3p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_3p",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/vape_3p.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape3pParticle.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape4p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_4p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape4pParticle.java",
+          "src/main/resources/assets/minecraft_drugs/particles/vape_4p.json"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape5p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_5p",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/vape_5p.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape5pParticle.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape6p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_6p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape6pParticle.java",
+          "src/main/resources/assets/minecraft_drugs/particles/vape_6p.json"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape7p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_7p",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/vape_7p.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape7pParticle.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vape8p",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_8p",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/vape_8p.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/Vape8pParticle.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodParticles"
+    },
+    {
+      "name": "Vapepod8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vapepod_8",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/Vapepod8Procedure.java"
+        ]
+      },
+      "path": "~/Vodpod/VapepodProcedures"
+    },
+    {
+      "name": "VapePod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vape_pod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/vape_pod.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/VapePodItem.java"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "Torchflowers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torchflowers",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/TorchflowersProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CrystallizedBlazemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallized_blazemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/CrystallizedBlazemphetamineItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/crystallized_blazemphetamine.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystallizedBreezemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallized_breezemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/CrystallizedBreezemphetamineItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/crystallized_breezemphetamine.json"
+        ]
+      }
+    },
+    {
+      "name": "PipeofBlazemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipeof_blazemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/pipeof_blazemphetamine.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/PipeofBlazemphetamineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PipeofBreezemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipeof_breezemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/pipeof_breezemphetamine.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/PipeofBreezemphetamineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PipeofBlazemphetaminePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipeof_blazemphetamine_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/PipeofBlazemphetaminePlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Mphetimenbreeze",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mphetimenbreeze",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/MphetimenbreezeParticle.java",
+          "src/main/resources/assets/minecraft_drugs/particles/mphetimenbreeze.json"
+        ]
+      }
+    },
+    {
+      "name": "Mphetimenblaze",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mphetimenblaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/particles/mphetimenblaze.json",
+          "src/main/java/net/mcreator/minecraftdrugs/client/particle/MphetimenblazeParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "PipeofBreezePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipeof_breeze_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/PipeofBreezePlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Mixing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/MixingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Pipe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/PipeItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/pipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperBattery",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_battery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/renderer/CopperBatteryItemRenderer.java",
+          "src/main/java/net/mcreator/minecraftdrugs/item/model/CopperBatteryItemModel.java",
+          "src/main/java/net/mcreator/minecraftdrugs/item/CopperBatteryItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/copper_battery.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperBatteryDead",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_battery_dead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/CopperBatteryDeadItem.java",
+          "src/main/java/net/mcreator/minecraftdrugs/item/renderer/CopperBatteryDeadItemRenderer.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/copper_battery_dead.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/model/CopperBatteryDeadItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "BucketofLiquidBlazemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucketof_liquid_blazemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/item/BucketofLiquidBlazemphetamineItem.java",
+          "src/main/resources/assets/minecraft_drugs/models/item/bucketof_liquid_blazemphetamine.json"
+        ]
+      }
+    },
+    {
+      "name": "BucketofLiquidBreezemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucketof_liquid_breezemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/bucketof_liquid_breezemphetamine.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BucketofLiquidBreezemphetamineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeBreeze",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_breeze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/recipe_breeze.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeBlaze",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_blaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/recipe_blaze.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipePipeblaze",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_pipeblaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/recipe_pipeblaze.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipePipeBreeze",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_pipe_breeze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/recipe_pipe_breeze.json"
+        ]
+      }
+    },
+    {
+      "name": "BucketofCrystallizedBlazemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucketof_crystallized_blazemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/bucketof_crystallized_blazemphetamine.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BucketofCrystallizedBlazemphetamineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BucketofCrystallizedBreezemphetamine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucketof_crystallized_breezemphetamine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_drugs/models/item/bucketof_crystallized_breezemphetamine.json",
+          "src/main/java/net/mcreator/minecraftdrugs/item/BucketofCrystallizedBreezemphetamineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipeCrystalBlaze",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_crystal_blaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/recipe_crystal_blaze.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeCrystalBreeze",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_crystal_breeze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/recipe_crystal_breeze.json"
+        ]
+      }
+    },
+    {
+      "name": "PipeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_drugs/recipe/pipe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Addiction",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "addiction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/potion/AddictionMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Psychosis",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "psychosis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/potion/PsychosisMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Paranoia",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paranoia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/potion/ParanoiaMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Euphoria",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "euphoria",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/potion/EuphoriaMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Addictiongetvapes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "addictiongetvapes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/AddictiongetvapesProcedure.java"
+        ]
+      },
+      "path": "~/Vodpod"
+    },
+    {
+      "name": "EuphoriaoverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "euphoriaoverlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/EuphoriaoverlayDisplayOverlayIngameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Euphoriaoverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "euphoriaoverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/screens/EuphoriaoverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "EuphoriaActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "euphoria_active_tick_condition",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/EuphoriaActiveTickConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Craving",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "craving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/potion/CravingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "CravingOverlya",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craving_overlya",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/client/screens/CravingOverlyaOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "CravingOverlyaDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craving_overlya_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/CravingOverlyaDisplayOverlayIngameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AddictionEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "addiction_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/AddictionEffectExpiresProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Nomilk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nomilk",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/NomilkProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LungDisease",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lung_disease",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/potion/LungDiseaseMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "LungDiseaseActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lung_disease_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/LungDiseaseActiveTickConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LungDiseaseOnEntityHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lung_disease_on_entity_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/minecraftdrugs/procedures/LungDiseaseOnEntityHurtProcedure.java"
         ]
       }
     }
@@ -2769,38 +4076,179 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "distill",
+      "files": [
+        "_mixingsfx"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "boilfinish",
+      "files": [
+        "steam-hissing-3861571555"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "boilstart",
+      "files": [
+        "steam-hissing-3861571"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "boil",
+      "files": [
+        "boiling-food-81761_1"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "distilling",
+      "files": [
+        "boiling-food-81761_1_1"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "breath",
+      "files": [
+        "vapesfx"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "breathbubble",
+      "files": [
+        "bubbles-003-6397"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "cough",
+      "files": [
+        "cough-104521_1"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "coughing",
+      "files": [
+        "cough1",
+        "cough2",
+        "cough3"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MixingTable",
       "~CUSTOM:Distillery"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:Distillery"
     ],
-    "BLOCKS:minecraft:timer": []
+    "BLOCKS:minecraft:timer": [],
+    "ITEMS:minecraft:liquids": [
+      "CUSTOM:BottleofLava",
+      "CUSTOM:NetherWartExtract",
+      "CUSTOM:TorchflowerExtract",
+      "CUSTOM:MembraneExtract",
+      "CUSTOM:Distilledghasttear",
+      "CUSTOM:MagmaCreamExtract",
+      "CUSTOM:BeetrootExtract",
+      "Items.POTIONITEM",
+      "Items.HONEY_BOTTLE"
+    ],
+    "ITEMS:minecraft:distill": [
+      "Blocks.TORCHFLOWER",
+      "Items.GHAST_TEAR",
+      "Items.MAGMA_CREAM",
+      "CUSTOM:MembranePaste",
+      "Items.BEETROOT",
+      "Items.NETHER_WART"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:VapePodGaurdian",
+      "~CUSTOM:VapePodPhantom",
+      "~CUSTOM:VapePodPitcher",
+      "~CUSTOM:VapePodwitch",
+      "~CUSTOM:VapePodMagma",
+      "~CUSTOM:VapePodPillager",
+      "~CUSTOM:VapePodMelon",
+      "~CUSTOM:VapePodGlowBlowFlavor",
+      "~CUSTOM:PipeofBreezemphetamine",
+      "~CUSTOM:PipeofBlazemphetamine"
+    ],
+    "ITEMS:minecraft:drugs": [
+      "CUSTOM:VapePodGlowBlowFlavor",
+      "CUSTOM:VapePodMelon",
+      "CUSTOM:VapePodPillager",
+      "CUSTOM:VapePodMagma",
+      "CUSTOM:VapePodwitch",
+      "CUSTOM:VapePodPitcher",
+      "CUSTOM:VapePodPhantom",
+      "CUSTOM:VapePodGaurdian"
+    ],
+    "ITEMS:minecraft:tag": [],
+    "ITEMS:minecraft:milk": [
+      "Items.MILK_BUCKET"
+    ]
   },
   "tab_element_order": {
     "CUSTOM:Citrinium": [
       "Distillery",
       "MortarandPestle",
-      "BreezePowder",
+      "MixingTable",
+      "CopperBattery",
+      "CopperBatteryDead",
       "NetherWartExtract",
       "TorchflowerExtract",
       "MembraneExtract",
       "Distilledghasttear",
       "MagmaCreamExtract",
       "BeetrootExtract",
-      "BottleofLava",
-      "MembraneChar",
-      "Charredprismarineshard",
+      "BreezePowder",
       "PowderedAncientDebris",
       "EchoPaste",
       "GroundPitcherPodFlakes",
       "GroundTorchFlowerFlakes",
-      "MagmaticCobblestone",
       "PitcherPaste",
-      "MembranePaste"
+      "MembranePaste",
+      "VapePodGlowBlowFlavor",
+      "VapePodMelon",
+      "VapePodPillager",
+      "VapePodMagma",
+      "VapePodwitch",
+      "VapePodPitcher",
+      "VapePodPhantom",
+      "VapePodGaurdian",
+      "VapePod",
+      "CrystallizedBlazemphetamine",
+      "CrystallizedBreezemphetamine",
+      "BucketofCrystallizedBlazemphetamine",
+      "BucketofCrystallizedBreezemphetamine",
+      "BucketofLiquidBlazemphetamine",
+      "BucketofLiquidBreezemphetamine",
+      "Pipe",
+      "PipeofBlazemphetamine",
+      "PipeofBreezemphetamine",
+      "Charredprismarineshard",
+      "MembraneChar",
+      "BottleofLava",
+      "MagmaticCobblestone"
     ]
   },
   "language_map": {
@@ -2818,17 +4266,60 @@
       "block.minecraft_drugs.magmatic_cobblestone": "Magmatic Cobblestone",
       "item.minecraft_drugs.distilledghasttear": "Distilled Ghast Tear",
       "gui.minecraft_drugs.distillery_gui.tooltip_black_people_eat_watermelon": "BLACK PEOPLE EAT WATERMELON",
-      "item_group.minecraft_drugs.tests": "Tests",
       "item.minecraft_drugs.Charred_phantom_membrane": "Membrane Char",
       "item.minecraft_drugs.charredprismarineshard": "Charred Prismarine Shard",
       "item.minecraft_drugs.membrane_char": "Charred Phantom Membrane",
-      "block.minecraft_drugs.mortarand_pestle": "Mortarand Pestle",
+      "block.minecraft_drugs.mortarand_pestle": "Mortar and Pestle",
       "item.minecraft_drugs.ground_pitcher_pod_flakes": "Ground Pitcher Pod Flakes",
       "item.minecraft_drugs.ground_torch_flower_flakes": "Ground Torchflower Flakes",
       "item.minecraft_drugs.breeze_powder": "Breeze Powder",
       "subtitles.grind": "",
       "item.minecraft_drugs.pitcher_paste": "Pitcher Paste",
-      "item.minecraft_drugs.membrane_paste": "Membrane Paste"
+      "item.minecraft_drugs.membrane_paste": "Membrane Paste",
+      "subtitles.distill": "",
+      "subtitles.boilfinish": "",
+      "subtitles.boilstart": "",
+      "subtitles.boil": "",
+      "block.minecraft_drugs.mixing_table": "Mixing Table",
+      "subtitles.distilling": "",
+      "item.minecraft_drugs.vape_pod_glow_blow_flavor": "Vape Pod",
+      "subtitles.breath": "",
+      "item.minecraft_drugs.vape_pod_glow_blow_flavor.description_0": "Glow Blow Berry Blast Flavor!",
+      "item.minecraft_drugs.vape_pod_melon": "Vape Pod",
+      "item.minecraft_drugs.vape_pod_melon.description_0": "Melon Sparkle Flavor!",
+      "item.minecraft_drugs.vape_pod_pillager.description_0": "Pillager Puff Flavor!",
+      "item.minecraft_drugs.vape_pod_pillager": "Vape Pod",
+      "item.minecraft_drugs.vape_pod_magma.description_0": "Spicy Steam Magma Cream Flavor!",
+      "item.minecraft_drugs.vape_pod_magma": "Vape Pod",
+      "item.minecraft_drugs.vape_podwitch.description_0": "Witches\u0027 Brew Flavor!",
+      "item.minecraft_drugs.vape_podwitch": "Vape Pod",
+      "item.minecraft_drugs.vape_pod_pitcher.description_0": "Pitcher Haste Paste Flavor!",
+      "item.minecraft_drugs.vape_pod_pitcher": "Vape Pod",
+      "item.minecraft_drugs.vape_pod_phantom.description_0": "Phantom Foam Flavor!",
+      "item.minecraft_drugs.vape_pod_phantom": "Vape Pod",
+      "item.minecraft_drugs.vape_pod_gaurdian.description_0": "Guardian Gas Flavor!",
+      "item.minecraft_drugs.vape_pod_gaurdian": "Vape Pod",
+      "item.minecraft_drugs.vape_pod": "Vape Pod",
+      "item.minecraft_drugs.crystallized_blazemphetamine": "Crystallized Blazemphetamine",
+      "item.minecraft_drugs.crystallized_breezemphetamine": "Crystallized Breezemphetamine",
+      "item.minecraft_drugs.pipeof_blazemphetamine": "Pipe of Blazemphetamine",
+      "item.minecraft_drugs.pipeof_breezemphetamine": "Pipe of Breezemphetamine",
+      "subtitles.breathbubble": "",
+      "item.minecraft_drugs.pipe": "Pipe",
+      "item.minecraft_drugs.copper_battery": "Copper Battery",
+      "item.minecraft_drugs.copper_battery_dead": " Dead Copper Battery",
+      "item.minecraft_drugs.bucketof_liquid_blazemphetamine": "Bucket of Liquid Blazemphetamine",
+      "item.minecraft_drugs.bucketof_liquid_breezemphetamine": "Bucket of Liquid Breezemphetamine",
+      "item.minecraft_drugs.bucketof_crystallized_blazemphetamine": "Bucket of Crystallized Blazemphetamine",
+      "item.minecraft_drugs.bucketof_crystallized_breezemphetamine": "Bucket of Crystallized Breezemphetamine",
+      "effect.minecraft_drugs.addiction": "Addiction",
+      "effect.minecraft_drugs.psychosis": "Psychosis",
+      "effect.minecraft_drugs.paranoia": "Paranoia",
+      "effect.minecraft_drugs.euphoria": "Euphoria",
+      "effect.minecraft_drugs.craving": "Craving",
+      "effect.minecraft_drugs.lung_disease": "Lung Disease",
+      "subtitles.cough": "",
+      "subtitles.coughing": ""
     }
   },
   "metadata": {
@@ -2841,9 +4332,14 @@
       "src/main/resources/assets/minecraft_drugs/sounds.json",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/minecraftdrugs/block/listener/ClientListener.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/ItemAnimationFactory.java",
+      "src/main/java/net/mcreator/minecraftdrugs/utils/AnimUtils.java",
       "src/main/java/net/mcreator/minecraftdrugs/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMenus.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModScreens.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModParticles.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModParticleTypes.java",
+      "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModMobEffects.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlocks.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModBlockEntities.java",
       "src/main/java/net/mcreator/minecraftdrugs/init/MinecraftDrugsModItems.java"
@@ -2863,6 +4359,40 @@
                 "children": []
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Motar_and_pestle",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Extracts",
+            "children": []
+          },
+          {
+            "name": "Chars",
+            "children": []
+          },
+          {
+            "name": "Crushed",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Vodpod",
+        "children": [
+          {
+            "name": "VapepodProcedures",
+            "children": []
+          },
+          {
+            "name": "VapepodParticles",
+            "children": []
           }
         ]
       }

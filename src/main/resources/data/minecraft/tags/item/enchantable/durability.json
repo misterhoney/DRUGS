@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_drugs:vape_pod_pitcher",
+    "minecraft_drugs:pipeof_breezemphetamine",
+    "minecraft_drugs:vape_pod_magma",
+    "minecraft_drugs:vape_pod_phantom",
+    "minecraft_drugs:vape_pod_pillager",
+    "minecraft_drugs:vape_podwitch",
+    "minecraft_drugs:vape_pod_gaurdian",
+    "minecraft_drugs:vape_pod_glow_blow_flavor",
+    "minecraft_drugs:vape_pod_melon",
+    "minecraft_drugs:pipeof_blazemphetamine"
+  ]
+}

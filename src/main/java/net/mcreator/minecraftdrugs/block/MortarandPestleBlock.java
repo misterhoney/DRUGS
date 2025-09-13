@@ -106,7 +106,7 @@ public class MortarandPestleBlock extends BaseEntityBlock implements EntityBlock
 			player.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Mortarand Pestle");
+					return Component.literal("Mortar and Pestle");
 				}
 
 				@Override

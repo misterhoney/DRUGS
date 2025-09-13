@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft_drugs:mixing_table",
     "minecraft_drugs:distillery"
   ]
 }

@@ -14,5 +14,85 @@
         "stream": false
       }
     ]
+  },
+  "distill": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:_mixingsfx",
+        "stream": false
+      }
+    ]
+  },
+  "boilfinish": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:steam-hissing-3861571555",
+        "stream": false
+      }
+    ]
+  },
+  "boilstart": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:steam-hissing-3861571",
+        "stream": false
+      }
+    ]
+  },
+  "boil": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:boiling-food-81761_1",
+        "stream": false
+      }
+    ]
+  },
+  "distilling": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:boiling-food-81761_1_1",
+        "stream": false
+      }
+    ]
+  },
+  "breath": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:vapesfx",
+        "stream": false
+      }
+    ]
+  },
+  "breathbubble": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:bubbles-003-6397",
+        "stream": false
+      }
+    ]
+  },
+  "cough": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:cough-104521_1",
+        "stream": false
+      }
+    ]
+  },
+  "coughing": {
+    "sounds": [
+      {
+        "name": "minecraft_drugs:cough1",
+        "stream": false
+      },
+      {
+        "name": "minecraft_drugs:cough2",
+        "stream": false
+      },
+      {
+        "name": "minecraft_drugs:cough3",
+        "stream": false
+      }
+    ]
   }
 }

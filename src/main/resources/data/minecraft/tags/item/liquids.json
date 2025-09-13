@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_drugs:beetroot_extract",
+    "minecraft_drugs:nether_wart_extract",
+    "minecraft_drugs:magma_cream_extract",
+    "minecraft_drugs:distilledghasttear",
+    "minecraft:honey_bottle",
+    "minecraft_drugs:bottleof_lava",
+    "minecraft_drugs:membrane_extract",
+    "minecraft_drugs:torchflower_extract",
+    "minecraft:potion"
+  ]
+}

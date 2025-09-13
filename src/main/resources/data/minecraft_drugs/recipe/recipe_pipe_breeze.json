@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft_drugs:crystallized_breezemphetamine"
+    },
+    {
+      "item": "minecraft_drugs:pipe"
+    }
+  ],
+  "result": {
+    "id": "minecraft_drugs:pipeof_breezemphetamine",
+    "count": 1
+  }
+}

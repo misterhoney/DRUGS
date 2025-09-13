@@ -20,6 +20,8 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModTabs;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModSounds;
+import net.mcreator.minecraftdrugs.init.MinecraftDrugsModParticleTypes;
+import net.mcreator.minecraftdrugs.init.MinecraftDrugsModMobEffects;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModMenus;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModItems;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModBlocks;
@@ -49,7 +51,9 @@ public class MinecraftDrugsMod {
 
 		MinecraftDrugsModTabs.REGISTRY.register(modEventBus);
 
+		MinecraftDrugsModMobEffects.REGISTRY.register(modEventBus);
 		MinecraftDrugsModMenus.REGISTRY.register(modEventBus);
+		MinecraftDrugsModParticleTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

@@ -1,5 +1,6 @@
 package net.mcreator.minecraftdrugs.world.inventory;
 
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -9,6 +10,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -17,10 +19,13 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.minecraftdrugs.network.DistilleryGUISlotMessage;
 import net.mcreator.minecraftdrugs.init.MinecraftDrugsModMenus;
 
 import java.util.function.Supplier;
@@ -32,7 +37,7 @@ public class DistilleryGUIMenu extends AbstractContainerMenu implements Minecraf
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 76)
+			if (!this.containsKey(key) && this.size() >= 77)
 				return null;
 			return super.put(key, value);
 		}
@@ -93,16 +98,32 @@ public class DistilleryGUIMenu extends AbstractContainerMenu implements Minecraf
 			private final int slot = 2;
 			private int x = DistilleryGUIMenu.this.x;
 			private int y = DistilleryGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("minecraft:liquids")));
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 62) {
 			private final int slot = 1;
 			private int x = DistilleryGUIMenu.this.x;
 			private int y = DistilleryGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return Blocks.MAGMA_BLOCK.asItem() == stack.getItem();
+			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 26) {
 			private final int slot = 3;
 			private int x = DistilleryGUIMenu.this.x;
 			private int y = DistilleryGUIMenu.this.y;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(3, 1, stack.getCount());
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -113,6 +134,11 @@ public class DistilleryGUIMenu extends AbstractContainerMenu implements Minecraf
 			private final int slot = 0;
 			private int x = DistilleryGUIMenu.this.x;
 			private int y = DistilleryGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("minecraft:distill")));
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -244,6 +270,13 @@ public class DistilleryGUIMenu extends AbstractContainerMenu implements Minecraf
 						ihm.setStackInSlot(i, ItemStack.EMPTY);
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			PacketDistributor.sendToServer(new DistilleryGUISlotMessage(slotid, x, y, z, ctype, meta));
+			DistilleryGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 
